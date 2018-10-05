@@ -6,6 +6,8 @@ function isVowel(string) {
 function pigLatinize(string) {
   if (isVowel(string[0]) === true) {
     return string + 'way';
+  } else if (string[0] === 'y' || string[0] === 'Y') {
+    return string.slice(1) + 'yay';
   } else {
     return string;
   }
