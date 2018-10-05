@@ -17,9 +17,14 @@ function pigLatinize(string) {
       let firstLetter = string[0];
       return string.slice(1) + firstLetter + 'ay';
     }
-  } else if (isConsonant(string[0,1]) == true && isVowel(string[2]) === true) {
+  } else if (isConsonant(string[0,1]) === true && isVowel(string[2]) === true) {
+    if (isConsonant(string[0]) === true && string[1] === 'q' && string[2] === 'u') {
+      let firstLetter = string[0];
+      return string.slice(3) + firstLetter + 'quay';
+    } else {
     let firstTwoLetters = string[0] + string[1];
     return string.slice(2) + firstTwoLetters + 'ay';
+    }
   } else if (isConsonant(string[0,1,2]) === true && isVowel(string[3]) === true) {
     let firstThreeLetters = string[0] + string[1] + string [2];
     return string.slice(3) + firstThreeLetters + 'ay';
