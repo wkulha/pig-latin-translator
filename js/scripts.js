@@ -1,6 +1,14 @@
+function isVowel(string) {
+  return (/^[aeiou]$/i).test(string);
+}
+
 function pigLatinize(string) {
   const vowels = ['a', 'e', 'i', 'o', 'u'];
-  return string
+  if (string.length === 1 && isVowel(string) === true) {
+    return string + 'way';
+  } else {
+  return string;
+  }
 }
 
 $(document).ready(function() {
