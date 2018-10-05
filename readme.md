@@ -13,8 +13,8 @@ _This is a webpage that I made to practice BDD with learnhowtoprogram.com. It ta
 | :-------------     | :------------- | :------------- |
 **Program Gathers User Input** | User input: 'i like pig latin' | Output: 'i like pig latin' |
 **Program Makes an Array from Input** | User input: 'i like pig latin' | Output: ['i', 'like', 'pig' 'latin'] |
-**Program Runs each Index of Array through a Loop to Translate** | Input: ['i', 'like', 'pig', 'latin'] | Output: ['iway', 'kelay', 'otay', 'eakspay', 'inway', 'igpay', 'atinlay'] |
-**Program Joins the String and Displays the Result** | Input: ['iway', 'kelay', 'otay', 'eakspay', 'inway', 'igpay', 'atinlay'] | Output: 'Iway eallyray ikelay otay eakspay inway igpay atinlay.' |
+**Program Runs each Index of Array through a Loop to Translate** | Input: ['i', 'like', 'pig', 'latin'] | Output: ['iway', 'kelay', 'igpay', 'atinlay'] |
+**Program Joins the String and Displays the Result** | Input: ['iway', 'kelay', 'igpay', 'atinlay'] | Output: 'Iway ikelay igpay atinlay.' |
 
 
 
