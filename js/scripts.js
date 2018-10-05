@@ -39,12 +39,10 @@ $(document).ready(function() {
     let translatedArray = []
     let userString = $('#user_string').val();
     let stringSeparated = userString.split(" ")
-    console.log(stringSeparated);
     let translating = stringSeparated.forEach(function(string) {
       let currentWord = pigLatinize(string);
       translatedArray.push(currentWord);
     });
-    console.log(translatedArray);
     $('.results').text(translatedArray.join(" ") + ".");
   });
 });
