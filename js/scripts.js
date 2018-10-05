@@ -28,14 +28,23 @@ function pigLatinize(string) {
   } else if (isConsonant(string[0,1,2]) === true && isVowel(string[3]) === true) {
     let firstThreeLetters = string[0] + string[1] + string [2];
     return string.slice(3) + firstThreeLetters + 'ay';
+  } else {
+    return string;
   }
 }
 
 $(document).ready(function() {
   $('#user_input').submit(function(event) {
     event.preventDefault();
+    let translatedArray = []
     let userString = $('#user_string').val();
-    let translated = pigLatinize(userString);
-    $('.results').text(translated);
+    let stringSeparated = userString.split(" ")
+    console.log(stringSeparated);
+    let translating = stringSeparated.forEach(function(string) {
+      let currentWord = pigLatinize(string);
+      translatedArray.push(currentWord);
+    });
+    console.log(translatedArray);
+    $('.results').text(translatedArray.join(" ") + ".");
   });
 });
